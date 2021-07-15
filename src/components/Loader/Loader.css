@@ -1,0 +1,67 @@
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.loader {
+    position: fixed;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #89888a;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+
+.loader__image {
+    position: absolute;
+}
+
+.loader__image_size_l {
+    width: 60vw;
+    height: 60vh;
+    transform: rotate(30deg);
+    animation: rotation 10s infinite ease-in-out;
+}
+
+.loader__image_size_m {
+    width: 50vw;
+    height: 50vh;
+    transform: rotate(50deg);
+    animation: rotation 8s infinite ease-in-out;
+}
+
+.loader__image_size_s {
+    width: 40vw;
+    height: 40vh;
+    transform: rotate(70deg);
+    animation: rotation 6s infinite ease-in-out;
+}
+
+
+
+.loader__image_size_xl {
+    width: 70vw;
+    height: 70vh;
+    animation: rotation 12s infinite ease-in-out;
+}
+
+.loader__image_size_xs {
+    width: 30vw;
+    height: 30vh;
+    transform: rotate(90deg);
+    animation: rotation 4s infinite ease-in-out;
+}
+
+.loader_shown {
+    visibility: visible;
+}

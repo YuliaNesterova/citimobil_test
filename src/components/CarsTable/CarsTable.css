@@ -1,0 +1,67 @@
+.cars-table {
+    display: table;
+    margin: 0 0 20px 0;
+    border-collapse: collapse;
+}
+
+.cars-table__name {
+    text-align: center;
+    width: 193px;
+    height: 48px;
+    border: 1px solid #E6EBF0;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #7B8395;
+}
+
+.cars__table_name_type_mark {
+    border-bottom: none;
+    border-right: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cars-table__image {
+    background: url("../../images/filter.svg");
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    margin-left: 10px;
+}
+
+.cars-table__image_reverse {
+    transform: scale(-1, -1);
+}
+
+.cars-table__data-row:hover {
+    cursor: pointer;
+    background-color: #E6EBF0;
+}
+
+.cars-table__data {
+    text-align: center;
+    width: 193px;
+    height: 40px;
+    border: 1px solid #E6EBF0;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    color: #1F232E;
+}
+
+.cars-table__not-found {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+
+    color: #7B8395;
+}

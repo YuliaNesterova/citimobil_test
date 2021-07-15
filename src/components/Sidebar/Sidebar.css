@@ -1,0 +1,5 @@
+.sidebar {
+    width: 224px;
+    background: #5554;
+    grid-area: sidebar;
+}

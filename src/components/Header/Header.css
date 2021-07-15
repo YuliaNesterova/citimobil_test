@@ -1,0 +1,5 @@
+.header {
+    background: #89888a;
+    height: 15vh;
+    grid-area: header;
+}
