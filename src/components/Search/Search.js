@@ -16,6 +16,10 @@ function Search(props) {
         setSearch('')
     }
 
+    function handleResetClick() {
+        props.handleResetClick();
+    }
+
     return (
             <div className="search">
                 <form className="search__form" onSubmit={searchFormSubmit}>
@@ -25,8 +29,11 @@ function Search(props) {
                         <input type="text" name="search" placeholder="Поиск" className="search__form-input"
                                value={search || ''} onChange={handleSearchChange} required/>
                     </fieldset>
-                    <button className="search__form-button" type="submit">Найти</button>
+                    <button className="search__button search__form-button" type="submit">Найти</button>
+                    <button className="search__button search__reset-button" onClick={handleResetClick}>Сброс</button>
                 </form>
+
+
 
         </div>
     )

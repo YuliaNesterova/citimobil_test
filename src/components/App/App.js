@@ -61,12 +61,16 @@ function App() {
 
     }
 
+    function handleResetClick() {
+        setIsSearched(false);
+    }
+
   return (
     <div className="page">
       <Header />
       <Sidebar />
         <Main cars={isSearched ? searchedCars : allCars} onSort={handleCarsSort} onSearch={handleCarsSearch}
-              notFound={noCarsFound}/>
+              notFound={noCarsFound} handleResetClick={handleResetClick}/>
       <Footer />
       <Loader isLoading={isLoading}/>
     </div>

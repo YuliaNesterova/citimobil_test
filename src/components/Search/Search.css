@@ -5,12 +5,14 @@
 
 .search__form {
     width: 100%;
+    max-width: 1177px;
     display: flex;
     justify-content: space-between;
 }
 
 .search__form-fields {
     width: 90%;
+    max-width: 620px;
     padding: 13px 16px;
     background: rgba(240, 242, 244, 0.5);
     border: 1px solid #DEE5EB;
@@ -44,19 +46,22 @@
     outline-color: #7827e3;
 }
 
-.search__form-button {
+.search__button {
+    max-width: 172px;
     padding: 13px 65px;
     background: #7B8395;
     border: none;
-    outline: none;
+    outline: 1px solid white;
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;
     color: #FFFFFF;
+    text-align: center;
     transition: opacity 0.3s ease-in-out;
+
 }
 
-.search__form-button:hover {
+.search__button:hover {
     cursor: pointer;
     opacity: 0.8;
 }
